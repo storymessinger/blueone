@@ -1,0 +1,145 @@
+@import './../../color';
+
+.background {
+    // background-color:$blue;
+
+}
+
+.slick-container {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    overflow:hidden;
+    margin-bottom: 16px !important;
+
+    .slide {
+        img {
+            width: 100%;
+        }
+    }
+    .slide__desc {
+        position: absolute;
+        top: 60px;
+        width:100%;
+        z-index: 1000;
+        color: white;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: flex;
+        flex-flow: column;
+        align-items:  center;
+        justify-content:  center;
+
+        h1 {
+            font-size:30px;
+            font-family: "brother-1816-black";
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 10px;
+            font-family: 'Nanum Square Light';
+        }
+    }
+
+}
+
+.dots {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    width: 100%;
+}
+
+
+.cast::-webkit-scrollbar { 
+    display: none; 
+}
+
+.cast {
+    overflow: hidden;
+    margin-bottom: 16px;
+    h1 {
+        padding-left: 16px;
+        font-size: 15px;
+        color: $blue;
+        font-family: "brother-1816-medium";
+        margin-bottom: 8px;
+    }
+}
+
+
+
+
+.cast__items {
+    display:flex;
+    width:200%;
+}
+
+.circle {
+    width: 100px;
+    height: 160px;
+    margin: 0 8px;
+    overflow: hidden;
+
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+
+    .circle__inside {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background:$blue;
+        margin-bottom: 8px;
+    }
+    .desc01 {
+        color: $blue;
+        font-size:11px;
+        margin-bottom: 4px;
+    }
+    .desc02, .desc03 {
+        color: gray;
+        font-size: 10px;
+    }
+}
+
+.staff {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 50px;
+    h1 {
+        font-size: 15px;
+        color: $blue;
+        font-family: "brother-1816-medium";
+        margin-bottom: 8px;
+    }
+}
+
+.pick {
+    display:flex;
+    .pick__img {
+        width: 42px;
+        height: 42px;
+        background-color: $blue;
+        margin-right: 8px;
+    }
+
+    .desc__box {
+        display:flex;
+        flex-flow:column;
+        justify-content: center;;
+    }
+    .desc01 {
+        font-size: 11px;
+        font-family: "brother-1816-medium";
+    }
+    .desc02 {
+        font-size: 10px;
+        color: gray;
+    }
+
+}

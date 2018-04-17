@@ -13,6 +13,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { MomentsComponent } from './moments/moments.component';
 import { MomentsDetailComponent } from './moments-detail/moments-detail.component';
 import { SearchBarMomentsComponent } from './search-bar-moments/search-bar-moments.component';
+import { SoundsComponent } from './sounds/sounds.component';
+import { SearchBarSoundsComponent } from './search-bar-sounds/search-bar-sounds.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { SearchBarMomentsComponent } from './search-bar-moments/search-bar-momen
     NavBarComponent,
     MomentsComponent,
     MomentsDetailComponent,
-    SearchBarMomentsComponent
+    SearchBarMomentsComponent,
+    SoundsComponent,
+    SearchBarSoundsComponent
   ],
   imports: [
     BrowserModule,
