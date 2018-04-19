@@ -19,8 +19,8 @@
     }
 
     .nav__check__title {
-        border-bottom: solid 1px white;
-        border-right : solid 1px white;
+        border-bottom: solid 1px rgba(255,255,255,0.5);
+        border-right : solid 1px rgba(255,255,255,0.5);
         font-size: 10px;
         padding: 13px 16px;
     }
@@ -29,8 +29,8 @@
         // padding-left: 16px;
         // padding-right: 16px;
         padding: 16px;
-        border-bottom: solid 1px white;
-        border-right : solid 1px white;
+        border-bottom: solid 1px rgba(255,255,255,0.5);
+        border-right : solid 1px rgba(255,255,255,0.5);
         h3 {
             font-size: 18px;
             padding-bottom: 4px;
@@ -45,11 +45,11 @@
     font-family: "brother-1816-light";
     font-size: 10px;
     padding: 13px 16px;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px rgba(255,255,255,0.5);
 }
 
 .nav__people {
-    padding: 4px 0;
+    padding: 8px 0;
     .nav__people__detail {
         display:flex;
         justify-content: space-between;
