@@ -9,6 +9,15 @@
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+   }
+}
+
 .background {
     margin-top: 45px;
 }
@@ -99,6 +108,9 @@
     }
 
     .room__desc {
+        opacity:0; 
+        animation: fadeIn 1s ease forwards;
+        
         display: flex;
         justify-content: space-between;
         h3 {
@@ -110,6 +122,9 @@
     }
 
     .room__info {
+        opacity:0; 
+        animation: fadeIn 1s ease forwards;
+
         font-family: "brother-1816-light";
         font-size: 10px;
         p {

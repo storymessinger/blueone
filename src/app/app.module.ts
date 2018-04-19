@@ -6,7 +6,6 @@ import { RouterModule } from '@angular/router';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressRouterModule } from '@ngx-progressbar/router';
 
-
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
