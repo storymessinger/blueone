@@ -71,6 +71,8 @@
 
     .room__img {
         background-color:$blue;
+        height: 200px;
+        overflow: hidden;
         img {
             width:100%;
         }
@@ -94,4 +96,11 @@
         font-family: "brother-1816-light";
         font-size: 10px;
     }
+}
+
+.shadow
+{
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 4px 6px -6px #777;
+       box-shadow: 0 4px 6px -6px #777;
 }
