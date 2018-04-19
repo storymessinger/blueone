@@ -19,6 +19,11 @@
     src: url('./assets/fonts/Brother-1816-Bold.otf') format('opentype');
 }
 
+@font-face{
+    font-family: "brother-1816-light";
+    src: url('./assets/fonts/Brother-1816-Light.otf') format('opentype');
+}
+
 html {
     font-family: "brother-1816",sans-serif;
     

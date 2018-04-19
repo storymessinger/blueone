@@ -1,12 +1,23 @@
 @import './../../color';
 
+@keyframes blueToWhite {
+    0% {
+        color: #2D1BA4;
+    }
+    100% {
+        color: white;
+    }
+}
+
 .background {
     margin-top: 45px;
 }
 
 .bg {
     background-color: $blue;
-    color: white;
+
+    color: $blue;
+    animation: blueToWhite 1s ease forwards;
 }
 .nav {
     display:flex;
@@ -73,6 +84,7 @@
     .room__img {
         height: 200px;
         overflow: hidden;
+        margin-bottom: 8px;
         img {
             width:100%;
         }
@@ -95,6 +107,9 @@
     .room__info {
         font-family: "brother-1816-light";
         font-size: 10px;
+        p {
+            padding-bottom: 2px;
+        }
     }
 }
 

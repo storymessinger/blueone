@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { routerConfig } from './app.routing';
 import { RouterModule } from '@angular/router';
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressRouterModule } from '@ngx-progressbar/router';
 
 
 import { AppComponent } from './app.component';
@@ -35,7 +37,9 @@ import { MyComponent } from './my/my.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routerConfig)
+    RouterModule.forRoot(routerConfig),
+    NgProgressModule.forRoot(),
+    NgProgressRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
