@@ -1,3 +1,4 @@
+import { MyComponent } from './my/my.component';
 import { MomentsComponent } from './moments/moments.component';
 import { LandingComponent } from './landing/landing.component';
 import { Routes, RouterModule } from "@angular/router";
@@ -26,6 +27,10 @@ export const routerConfig: Routes = [
     {
         path: 'sounds',
         component: SoundsComponent
+    },
+    {
+        path: 'my',
+        component: MyComponent
     }
 
 
