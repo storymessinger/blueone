@@ -1,7 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face{
+    font-family: "brother-1816";
+    src: url('./assets/fonts/Brother-1816-Regular.otf') format('opentype');
+}
+
+@font-face{
+    font-family: "brother-1816-medium";
+    src: url('./assets/fonts/Brother-1816-Medium.otf') format('opentype');
+}
+@font-face{
+    font-family: "brother-1816-black";
+    src: url('./assets/fonts/Brother-1816-Black.otf') format('opentype');
+}
+
+@font-face{
+    font-family: "brother-1816-bold";
+    src: url('./assets/fonts/Brother-1816-Bold.otf') format('opentype');
+}
+
 html {
     font-family: "brother-1816",sans-serif;
+    
 }
 body {
     margin: 0;
