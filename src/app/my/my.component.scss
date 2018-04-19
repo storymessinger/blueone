@@ -29,6 +29,7 @@
 .background {
     background-color: $lightblue;
     padding: 0 16px;
+    padding-bottom: 100px;
 }
 
 .membership {
@@ -123,10 +124,10 @@
 .btn {
     background-color:transparent;
     color:rgba(255,255,255,0.3);
-    border-color: rgba(255,255,255,0.3);
     padding:6px 12px;
     font-size: 10px;
     font-family: 'Nanum Square Light';
+    border: solid 1px rgba(255,255,255,0.3);
 }
 .btn:hover {
     border-color: white;
