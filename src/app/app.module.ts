@@ -1,3 +1,4 @@
+import { BackgroundService } from './services/background.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { routerConfig } from './app.routing';
@@ -18,6 +19,7 @@ import { SearchBarMomentsComponent } from './search-bar-moments/search-bar-momen
 import { SoundsComponent } from './sounds/sounds.component';
 import { SearchBarSoundsComponent } from './search-bar-sounds/search-bar-sounds.component';
 import { MyComponent } from './my/my.component';
+import { DroneComponent } from './drone/drone.component';
 
 
 @NgModule({
@@ -33,7 +35,8 @@ import { MyComponent } from './my/my.component';
     SearchBarMomentsComponent,
     SoundsComponent,
     SearchBarSoundsComponent,
-    MyComponent
+    MyComponent,
+    DroneComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,7 @@ import { MyComponent } from './my/my.component';
     NgProgressModule.forRoot(),
     NgProgressRouterModule
   ],
-  providers: [],
+  providers: [BackgroundService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
