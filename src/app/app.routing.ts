@@ -1,3 +1,4 @@
+import { DroneComponent } from './drone/drone.component';
 import { MomentsListComponent } from './moments-list/moments-list.component';
 import { MomentsRealComponent } from './moments-real/moments-real.component';
 import { MyComponent } from './my/my.component';
@@ -33,6 +34,10 @@ export const routerConfig: Routes = [
     {
         path: 'my',
         component: MyComponent
+    },
+    {
+        path: 'drone',
+        component: DroneComponent
     }
 
 

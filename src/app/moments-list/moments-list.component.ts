@@ -4,9 +4,9 @@ import { Observable } from 'rxjs';
 import {Http} from "@angular/http";
 import * as firebase from 'firebase/app';
 
-import { TweenLite } from 'gsap';
+import { TweenLite, TweenMax } from 'gsap';
 import ScrollToPlugin from "gsap/ScrollToPlugin";
-declare var TweenLite, Power2:any;
+declare var TweenLite, TweenMax, Power2, Elastic:any;
 
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/map';
@@ -49,6 +49,7 @@ export class MomentsListComponent implements OnInit {
       this.selectedPhoto = val[0];
     });
 
+    TweenMax.to('.circle', 1, {ease: Elastic.easeOut.config(1, 0.5), width: "25vw", height: "25vw"});
   }
 
   getPhotoList() {
