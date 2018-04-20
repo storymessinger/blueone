@@ -120,6 +120,15 @@
     .desc02, .desc03 {
         color: gray;
         font-size: 10px;
+        display:flex;
+
+        .svg--box {
+            display: flex;
+            align-items: center;
+            width: 10px;
+            height: 18px;
+        }
+
         svg {
             fill: currentColor;
         }
