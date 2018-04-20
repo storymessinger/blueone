@@ -6,7 +6,7 @@ import * as firebase from 'firebase/app';
 
 import { TweenLite, TweenMax } from 'gsap';
 import ScrollToPlugin from "gsap/ScrollToPlugin";
-declare var TweenLite, TweenMax, Power2, Elastic:any;
+declare var TweenLite, TweenMax, Power3, Elastic:any;
 
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/map';
