@@ -50,9 +50,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     img {
+        left: 50%;
+        transform: translate(-50%,0);
         position: absolute;
+        top: 40%;
         width: 40vw;
         z-index: 9999;
     }
