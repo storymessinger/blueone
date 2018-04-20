@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import './color.scss';
 
 @font-face{
     font-family: "brother-1816";
@@ -30,6 +31,7 @@ html {
 }
 body {
     margin: 0;
+    background-color:$blue;
 }
 
 p, h1, h2, h3, span {

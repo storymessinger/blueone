@@ -1,3 +1,4 @@
+import { AngularFirestore } from 'angularfire2/firestore';
 import { BackgroundService } from './services/background.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -5,6 +6,7 @@ import { routerConfig } from './app.routing';
 import { RouterModule } from '@angular/router';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressRouterModule } from '@ngx-progressbar/router';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
@@ -19,6 +21,11 @@ import { SoundsComponent } from './sounds/sounds.component';
 import { SearchBarSoundsComponent } from './search-bar-sounds/search-bar-sounds.component';
 import { MyComponent } from './my/my.component';
 import { DroneComponent } from './drone/drone.component';
+import { MomentsRealComponent } from './moments-real/moments-real.component';
+
+import {firebaseConfig} from "../environments/firebase.config";
+import {AngularFireModule} from 'angularfire2';
+import { MomentsListComponent } from './moments-list/moments-list.component';
 
 
 @NgModule({
@@ -35,15 +42,22 @@ import { DroneComponent } from './drone/drone.component';
     SoundsComponent,
     SearchBarSoundsComponent,
     MyComponent,
-    DroneComponent
+    DroneComponent,
+    MomentsRealComponent,
+    MomentsListComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routerConfig),
     NgProgressModule.forRoot(),
-    NgProgressRouterModule
+    NgProgressRouterModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    HttpModule
   ],
-  providers: [BackgroundService],
+  providers: [
+    BackgroundService,
+    AngularFirestore
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

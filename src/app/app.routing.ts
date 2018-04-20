@@ -1,3 +1,5 @@
+import { MomentsListComponent } from './moments-list/moments-list.component';
+import { MomentsRealComponent } from './moments-real/moments-real.component';
 import { MyComponent } from './my/my.component';
 import { MomentsComponent } from './moments/moments.component';
 import { LandingComponent } from './landing/landing.component';
@@ -22,7 +24,7 @@ export const routerConfig: Routes = [
     },
     {
         path: 'moments',
-        component: MomentsComponent
+        component: MomentsListComponent
     },
     {
         path: 'sounds',

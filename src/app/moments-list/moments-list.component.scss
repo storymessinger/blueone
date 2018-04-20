@@ -1,0 +1,42 @@
+.background {
+    // margin-top: 45px;
+    padding: 0 16px;
+    background-color:white;
+    min-height:100vh;
+}
+
+.photos {
+    // width:100%;
+    width: calc(87vw + 6px);
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 2px;
+    padding-bottom: 100px;
+    margin:auto;
+    .photos__box {
+        width: 29vw;
+        height: 29vw;
+        margin: 1px;
+        position: relative;
+        .aPhoto {
+            position: absolute;
+            // width:100%;
+            img {
+                width: 100%;
+            }
+            img:hover {
+                filter:opacity(0.5);
+            }
+        }
+    }
+}
+
+.selected__photo {
+    padding-top: 50px;
+    width: calc(87vw + 6px);
+    height: calc(87vw + 6px);
+    img {
+        width: 100%;
+    }
+}

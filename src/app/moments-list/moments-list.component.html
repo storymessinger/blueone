@@ -1,0 +1,26 @@
+<app-search-bar-moments></app-search-bar-moments>
+
+<div class="background">
+
+  <div class="selected__photo">
+    <img [src]="selectedPhoto.bigUrl">
+  </div>
+  <!-- <div class="inFocus__control">
+    <div class="inFocus__control__box delete" (click)=delete()><i class="fas fa-times"></i></div>
+    <div class="inFocus__control__box"></div>
+  </div> -->
+
+  <div class="photos">
+    <div class="photos__box" *ngFor="let ph of photo$ | async">
+      <div class="aPhoto">
+        <p class="aPhoto__date" style="display:none;">1231245123</p>
+        <img [src]='ph.bigUrl' (click)="selectImg($event.target)">
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+<app-nav-bar></app-nav-bar>

@@ -1,0 +1,71 @@
+.inFocus {
+    img {
+        width: 100%;
+    }
+    transition: all 1s ease;
+    position: relative;
+}
+
+.inFocus__control {
+    display:flex;
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+    .delete {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 26px;
+        color: white;
+    }
+
+    .inFocus__control__box {
+        width:40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #1C3FFD;
+        opacity:0.9;
+        border:solid 1px white;
+        margin-right: 20px;
+    }
+    .inFocus__control__box:hover {
+        opacity:0.5;
+
+    }
+}
+
+ .photos {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+
+    img {
+        width: 25vw;
+        border: solid 1px white;
+    }
+ }
+
+ .aPhoto {
+     position: relative;
+ }
+
+
+ .aPhoto__date {
+     position: absolute;
+     bottom: 5px;
+     left: 15px;
+     margin: 0;
+     color: white;
+     background-color: rgba(0,0,0,0.7);
+     padding: 0 5px;
+     font-size: 12px;
+ }
+ 
+
+@media (min-width: 768px) {
+    .photos {
+        img {
+            width: 19vw;
+        }
+    }
+}
