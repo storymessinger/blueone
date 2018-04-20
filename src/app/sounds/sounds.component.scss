@@ -22,7 +22,7 @@
     height: 200px;
     margin: 0 auto;
     overflow:hidden;
-    margin-bottom: 16px !important;
+    margin-bottom: 4px !important;
 
     .slide {
         img {
@@ -93,7 +93,7 @@
 .circle {
     width: 100px;
     height: 160px;
-    margin: 0 8px;
+    margin: 0 6px;
     overflow: hidden;
 
     display: flex;
@@ -107,6 +107,10 @@
         border-radius: 50%;
         background:$blue;
         margin-bottom: 8px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
     }
     .desc01 {
         color: $blue;
@@ -116,6 +120,9 @@
     .desc02, .desc03 {
         color: gray;
         font-size: 10px;
+        svg {
+            fill: currentColor;
+        }
     }
 }
 
