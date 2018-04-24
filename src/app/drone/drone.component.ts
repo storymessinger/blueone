@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-drone',
   templateUrl: './drone.component.html',
@@ -11,5 +12,6 @@ export class DroneComponent implements OnInit {
 
   ngOnInit() {
   }
+
 
 }

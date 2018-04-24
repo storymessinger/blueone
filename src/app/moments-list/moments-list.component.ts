@@ -1,12 +1,13 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore, AngularFirestoreDocument, AngularFirestoreCollection } from 'angularfire2/firestore';
 import { Observable } from 'rxjs';
 import {Http} from "@angular/http";
 import * as firebase from 'firebase/app';
 
-import { TweenLite, TweenMax } from 'gsap';
+import { TweenLite, TweenMax, TimelineLite } from 'gsap';
 import ScrollToPlugin from "gsap/ScrollToPlugin";
-declare var TweenLite, TweenMax, Power3, Elastic:any;
+declare var TimelineLite, TweenLite, TweenMax, Power3, Elastic:any;
 
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/map';
@@ -37,7 +38,7 @@ export class MomentsListComponent implements OnInit {
 
   private basePath:string = '/photos';
 
-  constructor(private afs: AngularFirestore, private http:Http) { }
+  constructor(private afs: AngularFirestore, private http:Http, private router:Router) { }
 
   ngOnInit() { 
 
@@ -80,12 +81,12 @@ export class MomentsListComponent implements OnInit {
 
     //Delete firebase stroage
     let storageRef = firebase.storage().ref();
-    storageRef.child(`${this.basePath}/${this.selectedPhoto.date}.jpg`).delete()
+    // storageRef.child(`${this.basePath}/${this.selectedPhoto.date}.jpg`).delete()
     
     //Delete firestore
-    this.afs.doc(`users/GGQZzOrT7PWhAU8wV4wFXrKUZ3E3/photos/${this.selectedPhoto.$key}`).delete();
+    // this.afs.doc(`users/GGQZzOrT7PWhAU8wV4wFXrKUZ3E3/photos/${this.selectedPhoto.$key}`).delete();
     //Get updated list of firestore
-    this.getPhotoList();
+    // this.getPhotoList();
 
   }
 
@@ -98,6 +99,23 @@ export class MomentsListComponent implements OnInit {
     else {
         TweenLite.to(document.documentElement, 0.6, {ease: Power3.easeOut, scrollTop: 0});
     }
-}
+  }
+
+  fillout(url){
+    // console.log('adsfsaffasfsfasfasdfs');
+    // console.log('adsfsaffasfsfasfasdfs');
+    // console.log('adsfsaffasfsfasfasdfs');
+    // console.log('adsfsaffasfsfasfasdfs');
+    // console.log('adsfsaffasfsfasfasdfs');
+    // console.log('adsfsaffasfsfasfasdfs');
+    // var tl = new TimelineLite();
+    // TweenMax.to(".circle", 10, { width:700, height:700, onComplete:this.navigateTo('aa') })
+    this.navigateTo(url)
+  }
+
+
+  navigateTo(url:string){
+    this.router.navigateByUrl(url)
+  }
 
 }

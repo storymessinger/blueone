@@ -31,6 +31,37 @@ export class MyComponent implements OnInit {
       // appendDots: $('.dots')
     
     })
+
+    $( document ).ready(function() {
+      var speed = 40;
+      typeEffect($('.account__num'), speed);
+
+      // typeEffect($('.box__desc'), speed);
+      // typeEffect($('.box__info'), speed);
+      // setTimeout(function(){
+      //   $('p').css('display', 'inline-block');
+      //   typeEffect($('p'), speed);
+      // }, delay);
+    });
+
+
   }
 
+
 }
+
+function typeEffect(element, speed) {
+	var text = $(element).text();
+	$(element).html('');
+	
+	var i = 0;
+	var timer = setInterval(function() {
+					if (i < text.length) {
+						$(element).append(text.charAt(i));
+						i++;
+					} else {
+						clearInterval(timer);
+					}
+				}, speed);
+}
+

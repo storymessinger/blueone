@@ -15,7 +15,7 @@ export class LandingComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.backgroundService.backgroundCanvas('animate','#2D1BA4',1, '#FFFFFF', '#FFFFFF', 10);
+    this.backgroundService.backgroundCanvas('animate','#2D1BA4',1, '#FFFFFF', '#FFFFFF', 12);
   }
 
 }

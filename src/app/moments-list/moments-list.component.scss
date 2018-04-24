@@ -1,4 +1,18 @@
 @import './../../color.scss';
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+img {
+    opacity: 0;
+    animation:fadeIn 2s ease 0.5s forwards;
+}
+
 .background {
     // margin-top: 45px;
     padding: 0 16px;
@@ -8,7 +22,7 @@
 
 .photos {
     // width:100%;
-    width: calc(87vw + 6px);
+    width: calc(88vw + 8px);
     display:flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -16,8 +30,8 @@
     padding-bottom: 100px;
     margin:auto;
     .photos__box {
-        width: 29vw;
-        height: 29vw;
+        width: 22vw;
+        height: 22vw;
         margin: 1px;
         position: relative;
         .aPhoto {
@@ -34,12 +48,21 @@
 }
 
 .selected__photo {
-    padding-top: 50px;
-    width: calc(87vw + 6px);
-    height: calc(87vw + 6px);
+    padding-top: 6px;
+    width: calc(88vw + 8px);
+    height: calc(88vw + 8px);
     margin: auto;
     img {
         width: 100%;
+    }
+}
+
+.inFocus__control {
+    padding-top: 56px;
+    width: calc(88vw + 8px);
+    margin: auto;
+    svg {
+        width: 14px;
     }
 }
 

@@ -25,6 +25,11 @@
     src: url('./assets/fonts/Brother-1816-Light.otf') format('opentype');
 }
 
+@font-face{
+    font-family: "brother-1816-thin";
+    src: url('./assets/fonts/Brother-1816-Thin.otf') format('opentype');
+}
+
 html {
     font-family: "brother-1816",sans-serif;
     
@@ -36,5 +41,5 @@ body {
 
 p, h1, h2, h3, span {
     margin: 0;
-    font-weight: 400;
+    font-weight: unset;
 }
