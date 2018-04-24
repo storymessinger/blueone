@@ -13,22 +13,18 @@
 
     display: flex;
     align-items:  center;
-    input {
-        color: rgba(96,96,96,0.8);
-        font-size: 16px;
-        font-family: "brother-1816";
-        width: 100%;
-        height: 100%;
-        padding: 0 16px;
-    }
-    input::placeholder {
-        color: rgba(96,96,96,0.3);
-    }
-    input[type=text]:focus, textarea:focus {
-    // input:foucs {
-        background-color: $lightblue;
-        color: red;
-    }
+}
+
+input {
+    color: rgba(96,96,96,0.8);
+    font-size: 16px;
+    font-family: "brother-1816";
+    width: 100%;
+    height: 100%;
+    padding: 0 16px;
+}
+input::placeholder {
+    color: rgba(96,96,96,0.3);
 }
 
 input {
@@ -37,4 +33,9 @@ input {
 
 textarea:focus, input:focus{
     outline: none;
+}
+
+input:focus, textarea:focus {
+    background-color: #3217b2c4;
+    color: white;
 }
