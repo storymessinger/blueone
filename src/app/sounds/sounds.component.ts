@@ -24,11 +24,11 @@ export class SoundsComponent implements OnInit {
       centerMode: true,
       centerPadding: '0px',
       swipeToSlide: true,
-      appendDots: $('.dots')
-      // touchMove: true,
-      // arrows: true,
-      // prevArrow: '<button style="border:none; outline:none; padding:0; display:block; transform:unset; -webkit-transform:unset; position: fixed; height: 220px;width: 150px;top: 0px;left: 0;background: transparent;color: transparent;z-index: 1000;" type="button" class="">Previous</button>',
-      // nextArrow: '<button style="border:none; outline:none; padding:0; display:block; transform:unset; -webkit-transform:unset; position: fixed; height: 220px;width: 150px;top: 0px;right: 0;background: transparent;color: transparent;z-index: 1000;" type="button" class="">Next</button>',
+      appendDots: $('.dots'),
+      touchMove: true,
+      arrows: true,
+      prevArrow: '<button style="border:none; outline:none; padding:0; display:block; transform:unset; -webkit-transform:unset; position: fixed; height: 220px;width: 150px;top: 0px;left: 0;background: transparent;color: transparent;z-index: 1000;" type="button" class="">Previous</button>',
+      nextArrow: '<button style="border:none; outline:none; padding:0; display:block; transform:unset; -webkit-transform:unset; position: fixed; height: 220px;width: 150px;top: 0px;right: 0;background: transparent;color: transparent;z-index: 1000;" type="button" class="">Next</button>',
     
     })
 
