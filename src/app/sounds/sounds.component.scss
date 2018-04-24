@@ -154,6 +154,9 @@
         height: 42px;
         background-color: $blue;
         margin-right: 8px;
+        img {
+            width: 100%;
+        }
     }
 
     .desc__box {
