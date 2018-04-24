@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import 'slick-carousel';
 import * as $ from 'jquery';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sounds',
@@ -9,7 +10,8 @@ import * as $ from 'jquery';
 })
 export class SoundsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
+
 
   ngOnInit() {
     $(".slick-container").slick({
@@ -32,6 +34,9 @@ export class SoundsComponent implements OnInit {
     
     })
 
+  }
+  navigateTo(url:string){
+    this.router.navigateByUrl(url);
   }
 
 }

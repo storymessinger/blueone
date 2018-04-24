@@ -26,6 +26,7 @@ import { MomentsRealComponent } from './moments-real/moments-real.component';
 import {firebaseConfig} from "../environments/firebase.config";
 import {AngularFireModule} from 'angularfire2';
 import { MomentsListComponent } from './moments-list/moments-list.component';
+import { SoundsDetailComponent } from './sounds-detail/sounds-detail.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { MomentsListComponent } from './moments-list/moments-list.component';
     MyComponent,
     DroneComponent,
     MomentsRealComponent,
-    MomentsListComponent
+    MomentsListComponent,
+    SoundsDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import { LandingComponent } from './landing/landing.component';
 import { Routes, RouterModule } from "@angular/router";
 import { RoomsNavComponent } from './rooms-nav/rooms-nav.component';
 import { SoundsComponent } from './sounds/sounds.component';
+import { SoundsDetailComponent } from './sounds-detail/sounds-detail.component';
 
 
 export const routerConfig: Routes = [
@@ -38,6 +39,10 @@ export const routerConfig: Routes = [
     {
         path: 'drone',
         component: DroneComponent
+    },
+    {
+        path: 'sounds_detail',
+        component: SoundsDetailComponent
     }
 
 
