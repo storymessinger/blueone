@@ -1,5 +1,14 @@
 @import './../../color';
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+   }
+}
+
 .background {
     background-color: white;
     svg {
@@ -19,7 +28,7 @@
 
 .slick-container {
     width: 100%;
-    height: 200px;
+    // height: 200px;
     margin: 0 auto;
     overflow:hidden;
     margin-bottom: 4px !important;
@@ -70,7 +79,9 @@
     display: none; 
 }
 
+
 .cast {
+
     overflow: hidden;
     margin-bottom: 16px;
     h1 {
@@ -181,4 +192,14 @@
 }
 .mat-button-wrapper:active {
     opacity: 0.1;
+}
+
+//animations 
+.slick-container {
+    opacity:0;
+    animation:fadeIn 1.5s ease forwards;
+}
+.cast, .staff {
+    opacity:0;
+    animation:fadeIn 2s ease 0.5s forwards;
 }

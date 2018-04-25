@@ -147,6 +147,12 @@ export class BackgroundService {
           // p.quad(x1,y1,x2,y2,x3,y3,x4,y4);
 
           p.ellipse(x,y,size,size)
+          // p.noFill();
+          // p.stroke(205, 205, 205)
+          
+          // p.line(x-1,y,x-1,y+15);
+
+          // p.bezier(x, (y+2), x-2, (y+2)+5, x+2, (y+2)+10, x, (y+2)+15);
 
         }
 

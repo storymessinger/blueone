@@ -1,8 +1,23 @@
 @import './../../color';
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        width:5%;
+        height:5%;
+    }
+    100% {
+        opacity: 1;
+        width:100%;
+        height:100%;
+    }
+}
+
 .navbar {
+    opacity:0;
+    animation:fadeIn 2s ease 0.5s forwards;
     box-shadow: 0 3px 6px 0px #777;
-    z-index: 9999;
+    z-index: 9998;
 
     position: fixed;
     bottom:0;
