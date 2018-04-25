@@ -13,6 +13,10 @@ export class RoomsNavComponent implements OnInit {
 
   constructor() { }
 
+    defaultImage="http://via.placeholder.com/288x170" 
+    image="./../../assets/2x/room01.png" 
+    offset="100"
+
   ngOnInit() {
   }
 

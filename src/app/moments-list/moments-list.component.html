@@ -17,7 +17,8 @@
     <div class="photos__box" *ngFor="let ph of photo$ | async">
       <div class="aPhoto">
         <p class="aPhoto__date" style="display:none;">1231245123</p>
-        <img [src]='ph.bigUrl' (click)="selectImg($event.target)">
+        <!-- <img [src]='ph.bigUrl' (click)="selectImg($event.target)"> -->
+        <img defaultImage="http://via.placeholder.com/100x100" [lazyLoad]="ph.bigUrl" offset="100" (click)="selectImg($event.target)">
       </div>
     </div>
 

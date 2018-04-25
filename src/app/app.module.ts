@@ -29,6 +29,7 @@ import { MomentsListComponent } from './moments-list/moments-list.component';
 import { SoundsDetailComponent } from './sounds-detail/sounds-detail.component';
 import {MatButtonModule} from '@angular/material/button';
 import { MainComponent } from './main/main.component';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { MainComponent } from './main/main.component';
     NgProgressRouterModule,
     AngularFireModule.initializeApp(firebaseConfig),
     HttpModule,
-    MatButtonModule
+    MatButtonModule,
+    LazyLoadImageModule
   ],
   providers: [
     BackgroundService,
