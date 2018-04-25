@@ -23,6 +23,28 @@
 
     display:flex;
     flex-flow:column;
+
+    /////
+    .left {
+        position: absolute;
+        z-index:2000;
+        fill: rgba(255,255,255,.3);
+        top:120px;
+        left:5px;
+    }
+    .left2 {
+        left: 15px;
+    }
+    .right {
+        position: absolute;
+        z-index:2000;
+        fill: rgba(255,255,255,.3);
+        top:120px;
+        right:5px;
+    }
+    .right2 {
+        right: 15px;
+    }
 }
 
 // .slide {
@@ -37,6 +59,7 @@
     margin: 0 auto;
     overflow:hidden;
     margin-top: 20px;
+
 }
 
 .slider-for__slide {
