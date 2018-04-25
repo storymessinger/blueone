@@ -50,7 +50,7 @@ export class MomentsListComponent implements OnInit {
       this.selectedPhoto = val[0];
     });
 
-    TweenMax.from('.circle', 1, {ease: Elastic.easeOut.config(1, 0.5), width: "10px", height: "10px"});
+    TweenMax.from('.circle', 1.8, {delay: 1, ease: Elastic.easeOut.config(1, 0.5), width: "1px", height: "1px"});
   }
 
   getPhotoList() {
