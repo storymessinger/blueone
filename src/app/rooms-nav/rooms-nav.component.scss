@@ -48,7 +48,7 @@
     .nav__check__info {
         // padding-left: 16px;
         // padding-right: 16px;
-        padding: 16px;
+        padding: 12px 0 16px 16px;
         border-bottom: solid 1px rgba(255,255,255,0.5);
         border-right : solid 1px rgba(255,255,255,0.5);
         h3 {
@@ -70,6 +70,7 @@
 
 .nav__people {
     padding: 8px 0;
+    box-shadow: 0 4px 6px -6px #777;
     .nav__people__detail {
         display:flex;
         justify-content: space-between;
@@ -80,6 +81,11 @@
         display: flex;
         width: 90px;
         justify-content: space-around;
+        .nav__people__num__num {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
     }
 
 }
@@ -88,17 +94,25 @@
     background-color: white;
     padding-left: 16px;
     padding-right: 16px;
+    padding-bottom: 100px;
     padding-top: 16px;
-    padding-bottom: 100px
 }
+
+// .bg {
+//     position: fixed;
+//     width: 100%;
+//     z-index: 9999;
+// }
+// .list {
+//     padding-top: 216px;
+// }
 
 .room {
     margin-bottom: 24px;
 
     .room__img {
-        // height: 200px;
         overflow: hidden;
-        margin-bottom: 8px;
+        // margin-bottom: 8px;
         img {
             width:100%;
         }
@@ -129,6 +143,9 @@
         font-size: 10px;
         p {
             padding-bottom: 2px;
+        }
+        svg {
+            fill: $gray;
         }
     }
 }

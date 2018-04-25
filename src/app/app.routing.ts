@@ -1,3 +1,4 @@
+import { MainComponent } from './main/main.component';
 import { DroneComponent } from './drone/drone.component';
 import { MomentsListComponent } from './moments-list/moments-list.component';
 import { MomentsRealComponent } from './moments-real/moments-real.component';
@@ -21,29 +22,32 @@ export const routerConfig: Routes = [
         component: LandingComponent
     },
     {
-        path: 'rooms',
-        component: RoomsNavComponent
-    },
-    {
-        path: 'moments',
-        component: MomentsListComponent
-    },
-    {
-        path: 'sounds',
-        component: SoundsComponent
-    },
-    {
-        path: 'my',
-        component: MyComponent
-    },
-    {
-        path: 'drone',
-        component: DroneComponent
-    },
-    {
-        path: 'sounds_detail',
-        component: SoundsDetailComponent
+        path: 'main',
+        component: MainComponent,
+        children: [{
+            path: 'rooms',
+            component: RoomsNavComponent
+        },{
+            path: 'moments',
+            component: MomentsListComponent
+        },
+        {
+            path: 'sounds',
+            component: SoundsComponent
+        },
+        {
+            path: 'my',
+            component: MyComponent
+        },
+        {
+            path: 'drone',
+            component: DroneComponent
+        },
+        {
+            path: 'sounds_detail',
+            component: SoundsDetailComponent
+        }
+    ]
     }
-
 
 ]

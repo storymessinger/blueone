@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import './color.scss';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "./custom-material-theme.scss";
 
 @font-face{
     font-family: "brother-1816";

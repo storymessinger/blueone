@@ -23,6 +23,7 @@ input {
     height: 100%;
     padding: 0 16px;
 }
+
 input::placeholder {
     color: rgba(96,96,96,0.3);
 }
@@ -36,6 +37,6 @@ textarea:focus, input:focus{
 }
 
 input:focus, textarea:focus {
-    background-color: #3217b2c4;
-    color: white;
+    background-color: $lightgray;
+    // color: white;
 }

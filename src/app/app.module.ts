@@ -27,6 +27,8 @@ import {firebaseConfig} from "../environments/firebase.config";
 import {AngularFireModule} from 'angularfire2';
 import { MomentsListComponent } from './moments-list/moments-list.component';
 import { SoundsDetailComponent } from './sounds-detail/sounds-detail.component';
+import {MatButtonModule} from '@angular/material/button';
+import { MainComponent } from './main/main.component';
 
 
 @NgModule({
@@ -46,7 +48,8 @@ import { SoundsDetailComponent } from './sounds-detail/sounds-detail.component';
     DroneComponent,
     MomentsRealComponent,
     MomentsListComponent,
-    SoundsDetailComponent
+    SoundsDetailComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,8 @@ import { SoundsDetailComponent } from './sounds-detail/sounds-detail.component';
     NgProgressModule.forRoot(),
     NgProgressRouterModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    HttpModule
+    HttpModule,
+    MatButtonModule
   ],
   providers: [
     BackgroundService,

@@ -174,3 +174,11 @@
     }
 
 }
+
+.mat-icon-button:active {
+
+    background: red;
+}
+.mat-button-wrapper:active {
+    opacity: 0.1;
+}
